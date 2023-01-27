@@ -51,6 +51,7 @@ function desencriptar(stringDesencriptada) {
 function copiar() {
     var textocopiado = mensagem;
     mensagem.select();
+    mensagem.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(mensagem.value);
     alert('Copiado');
     mensagem.value = "";
